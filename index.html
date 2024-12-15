@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a slot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Schedule a Meeting</h1>
+        
+        <div class="calendar-section">
+            <h2>Calendar View</h2>
+            <div class="calendar-controls">
+                <input type="date" id="date" required>
+                <select id="time" required>
+                    <option value="">Select a time</option>
+                </select>
+            </div>
+
+            <div id="calendar">
+                <div class="timeline-slots">
+                    <div class="slot-row">
+                        <div class="time-slot">9:00 AM</div>
+                        <div class="slot" data-time="09:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-row">
+                        <div class="time-slot">10:00 AM</div>
+                        <div class="slot" data-time="10:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-row">
+                        <div class="time-slot">11:00 AM</div>
+                        <div class="slot" data-time="11:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-row">
+                        <div class="time-slot">1:00 PM</div>
+                        <div class="slot" data-time="13:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-row">
+                        <div class="time-slot">2:00 PM</div>
+                        <div class="slot" data-time="14:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-row">
+                        <div class="time-slot">3:00 PM</div>
+                        <div class="slot" data-time="15:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slot-row">
+                        <div class="time-slot">4:00 PM</div>
+                        <div class="slot" data-time="16:00">
+                            <div class="slot-details">
+                                <p class="booker-name"></p>
+                                <p class="booking-purpose"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="booking-form">
+            <h2>Book a Slot</h2>
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="purpose">Purpose of Meeting:</label>
+                    <textarea id="purpose" required></textarea>
+                </div>
+
+                <button type="submit">Book Slot</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
